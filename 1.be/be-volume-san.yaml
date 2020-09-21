@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "storageDriverName": "ontap-san",
+    "backendName": "be-volume-san",
+    "managementLIF": "192.168.0.111",
+    "dataLIF": "192.168.0.122",
+    "svm": "svm1",
+    "username": "admin",
+    "password": "Netapp1!",
+    "limitAggregateUsage": "60%",
+    "igroupName": "trident",
+    "useCHAP": true,
+    "storagePrefix": "cce_volume_san",
+    "ChapUsername": "netapp",
+    "ChapInitiatorSecret": "netapp",
+    "ChapTargetUsername": "netapp1",
+    "ChapTargetInitiatorSecret": "netapp1",
+    "defaults": {
+      "spaceReserve": "none",
+      "snapshotPolicy": "coming",
+      "snapshotReserve": "10"
+	  }
+}
+
+ChapUsername ChapInitiatorSecret ChapTargetUsername ChapTargetInitiatorSecret

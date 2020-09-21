@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "storageDriverName": "ontap-nas",
+    "backendName": "be-volume",
+    "managementLIF": "192.168.0.111",
+    "dataLIF": "192.168.0.132",
+    "svm": "svm1",
+    "username": "admin",
+    "password": "Netapp1!",
+    "exportPolicy": "default",
+    "limitAggregateUsage": "60%",
+    "limitVolumeSize": "50Gi",
+    "nfsMountOptions": "-o nfsvers=3",
+    "storagePrefix": "cce_volume",
+    "defaults": {
+      "spaceReserve": "none",
+      "snapshotPolicy": "default-1weekly",
+      "snapshotReserve": "10"
+	  }
+}

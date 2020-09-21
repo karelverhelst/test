@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "storageDriverName": "ontap-nas-economy",
+    "backendName": "be-qtree",
+    "managementLIF": "192.168.0.111",
+    "dataLIF": "192.168.0.132",
+    "svm": "svm1",
+    "username": "admin",
+    "password": "Netapp1!",
+    "exportPolicy": "default",
+    "limitAggregateUsage": "80%",
+    "limitVolumeSize": "50Gi",
+    "nfsMountOptions": "-o nfsvers=3",
+    "storagePrefix": "cce_qtree",
+    "defaults": {
+      "snapshotPolicy": "default-1weekly",
+      "snapshotReserve": "10"
+	  }
+}

@@ -1,0 +1,9 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: sc-ontap-nas-economy
+provisioner: csi.trident.netapp.io
+parameters:
+  backendType: "ontap-nas-economy"
+  storagePools: "be-qtree:.*"
+allowVolumeExpansion: true

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-from-snap-volume-san
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: sc-ontap-nas
+  resources:
+    requests:
+      storage: 1Gi
+  dataSource:
+    name: snap-volume-san
+    kind: VolumeSnapshot
+    apiGroup: snapshot.storage.k8s.io
